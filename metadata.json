@@ -1,0 +1,9 @@
+
+{
+  "name": "MegaStream Pro",
+  "description": "A streamlined video playback application that allows users to input cloud storage links and enjoy content in a dedicated player with integrated ad slots for monetization.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
