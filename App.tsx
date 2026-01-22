@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { AppScreen } from './types';
-import UrlInput from './components/UrlInput';
-import PlayerView from './components/PlayerView';
+import UrlInput from './UrlInput';
+import PlayerView from './PlayerView';
 
 const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<AppScreen>('home');
@@ -21,7 +20,6 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col transition-colors duration-500 bg-slate-950">
       {currentScreen === 'home' ? (
         <main className="flex-1 flex flex-col items-center justify-center relative overflow-hidden">
-          {/* Animated Background Decor */}
           <div className="absolute top-0 left-0 w-full h-full -z-10">
             <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full animate-pulse" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-emerald-600/10 blur-[120px] rounded-full animate-pulse delay-700" />
